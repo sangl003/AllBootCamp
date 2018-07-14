@@ -1,0 +1,296 @@
+
+
+sharvari@VAIO MINGW64 /c/Users
+$ mkdir test
+mkdir: cannot create directory ‘test’: Permission denied
+
+sharvari@VAIO MINGW64 /c/Users
+$ pwd
+/c/Users
+
+sharvari@VAIO MINGW64 /c/Users
+$ ls
+ Administrator/   Default/         Default.migrated/   desktop.ini  'HomeGroupUser$'/   salve/      UpdatusUser/
+'All Users'@     'Default User'@   DefaultAccount/     Guest/        Public/            sharvari/   WDAGUtilityAccount/
+
+sharvari@VAIO MINGW64 /c/Users
+$ ls sharvari
+'3D Objects'/             Downloads/              'My Documents'@                                                                                 ntuser.ini      SendTo@
+ AppData/                 Favorites/               NetHood@                                                                                       OneDrive/       SkyDrive/
+'Application Data'@       IntelGraphicsProfiles/   NTUSER.DAT                                                                                     Pictures/      'Start Menu'@
+ Contacts/                Links/                   ntuser.dat.LOG1                                                                                PrintHood@      Templates@
+ Cookies@                'Local Settings'@         ntuser.dat.LOG2                                                                                Recent@         Tracing/
+'Creative Cloud Files'/   MicrosoftEdgeBackups/    NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TM.blf                                        Roaming/        Videos/
+ Desktop/                 MINSTP201806FSF5/        NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/
+ Documents/               Music/                   NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000002.regtrans-ms   Searches/
+
+sharvari@VAIO MINGW64 /c/Users
+$ pwd
+/c/Users
+
+sharvari@VAIO MINGW64 /c/Users
+$ cd sharvari
+
+sharvari@VAIO MINGW64 ~
+$ pwd
+/c/Users/sharvari
+
+sharvari@VAIO MINGW64 ~
+$ mkdir test001
+
+sharvari@VAIO MINGW64 ~
+$ ls
+'3D Objects'/             Downloads/              'My Documents'@                                                                                 ntuser.ini      SendTo@
+ AppData/                 Favorites/               NetHood@                                                                                       OneDrive/       SkyDrive/
+'Application Data'@       IntelGraphicsProfiles/   NTUSER.DAT                                                                                     Pictures/      'Start Menu'@
+ Contacts/                Links/                   ntuser.dat.LOG1                                                                                PrintHood@      Templates@
+ Cookies@                'Local Settings'@         ntuser.dat.LOG2                                                                                Recent@         test001/
+'Creative Cloud Files'/   MicrosoftEdgeBackups/    NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TM.blf                                        Roaming/        Tracing/
+ Desktop/                 MINSTP201806FSF5/        NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/   Videos/
+ Documents/               Music/                   NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000002.regtrans-ms   Searches/
+
+sharvari@VAIO MINGW64 ~
+$ ls -l
+total 17861
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:06 '3D Objects'/
+drwxr-xr-x 1 sharvari 197610        0 May 25 09:29  AppData/
+lrwxrwxrwx 1 sharvari 197610       33 May 25 09:26 'Application Data' -> /c/Users/sharvari/AppData/Roaming/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:06  Contacts/
+lrwxrwxrwx 1 sharvari 197610       61 May 25 09:26  Cookies -> /c/Users/sharvari/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 sharvari 197610        0 Jun 26 18:44 'Creative Cloud Files'/
+drwxr-xr-x 1 sharvari 197610        0 Jun 19 18:45  Desktop/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:07  Documents/
+drwxr-xr-x 1 sharvari 197610        0 Jun 26 18:43  Downloads/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:06  Favorites/
+drwxr-xr-x 1 sharvari 197610        0 Jun 26 18:38  IntelGraphicsProfiles/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:07  Links/
+lrwxrwxrwx 1 sharvari 197610       31 May 25 09:26 'Local Settings' -> /c/Users/sharvari/AppData/Local/
+drwxr-xr-x 1 sharvari 197610        0 Jan  7 08:58  MicrosoftEdgeBackups/
+drwxr-xr-x 1 sharvari 197610        0 Jun 26 19:56  MINSTP201806FSF5/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:06  Music/
+lrwxrwxrwx 1 sharvari 197610       27 May 25 09:26 'My Documents' -> /c/Users/sharvari/Documents/
+lrwxrwxrwx 1 sharvari 197610       69 May 25 09:26  NetHood -> '/c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+-rw-r--r-- 1 sharvari 197610 13893632 Jun 26 15:33  NTUSER.DAT
+-rw-r--r-- 1 sharvari 197610   917504 May 25 09:26  ntuser.dat.LOG1
+-rw-r--r-- 1 sharvari 197610  2228224 May 25 09:26  ntuser.dat.LOG2
+-rw-r--r-- 1 sharvari 197610    65536 Jun 26 15:33  NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TM.blf
+-rw-r--r-- 1 sharvari 197610   524288 Jun 26 15:33  NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 sharvari 197610   524288 May 25 09:26  NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 sharvari 197610       20 May 25 10:06  ntuser.ini
+drwxr-xr-x 1 sharvari 197610        0 Jun 22 19:59  OneDrive/
+drwxr-xr-x 1 sharvari 197610        0 Jun 20 21:31  Pictures/
+lrwxrwxrwx 1 sharvari 197610       69 May 25 09:26  PrintHood -> '/c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 sharvari 197610       58 May 25 09:26  Recent -> /c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 sharvari 197610        0 Sep 29  2016  Roaming/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:07 'Saved Games'/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:06  Searches/
+lrwxrwxrwx 1 sharvari 197610       58 May 25 09:26  SendTo -> /c/Users/sharvari/AppData/Roaming/Microsoft/Windows/SendTo/
+drwxr-xr-x 1 sharvari 197610        0 Feb  6  2016  SkyDrive/
+lrwxrwxrwx 1 sharvari 197610       62 May 25 09:26 'Start Menu' -> '/c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 sharvari 197610       61 May 25 09:26  Templates -> /c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 sharvari 197610        0 Jun 26 20:39  test001/
+drwxr-xr-x 1 sharvari 197610        0 May 20  2016  Tracing/
+drwxr-xr-x 1 sharvari 197610        0 May 25 10:06  Videos/
+
+sharvari@VAIO MINGW64 ~
+$ ls -lh
+total 18M
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:06 '3D Objects'/
+drwxr-xr-x 1 sharvari 197610    0 May 25 09:29  AppData/
+lrwxrwxrwx 1 sharvari 197610   33 May 25 09:26 'Application Data' -> /c/Users/sharvari/AppData/Roaming/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:06  Contacts/
+lrwxrwxrwx 1 sharvari 197610   61 May 25 09:26  Cookies -> /c/Users/sharvari/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 sharvari 197610    0 Jun 26 18:44 'Creative Cloud Files'/
+drwxr-xr-x 1 sharvari 197610    0 Jun 19 18:45  Desktop/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:07  Documents/
+drwxr-xr-x 1 sharvari 197610    0 Jun 26 18:43  Downloads/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:06  Favorites/
+drwxr-xr-x 1 sharvari 197610    0 Jun 26 18:38  IntelGraphicsProfiles/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:07  Links/
+lrwxrwxrwx 1 sharvari 197610   31 May 25 09:26 'Local Settings' -> /c/Users/sharvari/AppData/Local/
+drwxr-xr-x 1 sharvari 197610    0 Jan  7 08:58  MicrosoftEdgeBackups/
+drwxr-xr-x 1 sharvari 197610    0 Jun 26 19:56  MINSTP201806FSF5/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:06  Music/
+lrwxrwxrwx 1 sharvari 197610   27 May 25 09:26 'My Documents' -> /c/Users/sharvari/Documents/
+lrwxrwxrwx 1 sharvari 197610   69 May 25 09:26  NetHood -> '/c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+-rw-r--r-- 1 sharvari 197610  14M Jun 26 15:33  NTUSER.DAT
+-rw-r--r-- 1 sharvari 197610 896K May 25 09:26  ntuser.dat.LOG1
+-rw-r--r-- 1 sharvari 197610 2.2M May 25 09:26  ntuser.dat.LOG2
+-rw-r--r-- 1 sharvari 197610  64K Jun 26 15:33  NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TM.blf
+-rw-r--r-- 1 sharvari 197610 512K Jun 26 15:33  NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 sharvari 197610 512K May 25 09:26  NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 sharvari 197610   20 May 25 10:06  ntuser.ini
+drwxr-xr-x 1 sharvari 197610    0 Jun 22 19:59  OneDrive/
+drwxr-xr-x 1 sharvari 197610    0 Jun 20 21:31  Pictures/
+lrwxrwxrwx 1 sharvari 197610   69 May 25 09:26  PrintHood -> '/c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 sharvari 197610   58 May 25 09:26  Recent -> /c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 sharvari 197610    0 Sep 29  2016  Roaming/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:07 'Saved Games'/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:06  Searches/
+lrwxrwxrwx 1 sharvari 197610   58 May 25 09:26  SendTo -> /c/Users/sharvari/AppData/Roaming/Microsoft/Windows/SendTo/
+drwxr-xr-x 1 sharvari 197610    0 Feb  6  2016  SkyDrive/
+lrwxrwxrwx 1 sharvari 197610   62 May 25 09:26 'Start Menu' -> '/c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 sharvari 197610   61 May 25 09:26  Templates -> /c/Users/sharvari/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 sharvari 197610    0 Jun 26 20:39  test001/
+drwxr-xr-x 1 sharvari 197610    0 May 20  2016  Tracing/
+drwxr-xr-x 1 sharvari 197610    0 May 25 10:06  Videos/
+
+sharvari@VAIO MINGW64 ~
+$ rm test001/
+rm: cannot remove 'test001/': Is a directory
+
+sharvari@VAIO MINGW64 ~
+$ pwd
+/c/Users/sharvari
+
+sharvari@VAIO MINGW64 ~
+$ rmdir test001/
+
+sharvari@VAIO MINGW64 ~
+$ ls
+'3D Objects'/             Downloads/              'My Documents'@                                                                                 ntuser.ini      SendTo@
+ AppData/                 Favorites/               NetHood@                                                                                       OneDrive/       SkyDrive/
+'Application Data'@       IntelGraphicsProfiles/   NTUSER.DAT                                                                                     Pictures/      'Start Menu'@
+ Contacts/                Links/                   ntuser.dat.LOG1                                                                                PrintHood@      Templates@
+ Cookies@                'Local Settings'@         ntuser.dat.LOG2                                                                                Recent@         Tracing/
+'Creative Cloud Files'/   MicrosoftEdgeBackups/    NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TM.blf                                        Roaming/        Videos/
+ Desktop/                 MINSTP201806FSF5/        NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000001.regtrans-ms  'Saved Games'/
+ Documents/               Music/                   NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000002.regtrans-ms   Searches/
+
+sharvari@VAIO MINGW64 ~
+$ pwd
+/c/Users/sharvari
+
+sharvari@VAIO MINGW64 ~
+$ mkdir First
+
+sharvari@VAIO MINGW64 ~
+$ pwd
+/c/Users/sharvari
+
+sharvari@VAIO MINGW64 ~
+$ ls
+'3D Objects'/             First/                   ntuser.dat.LOG1                                                                                Roaming/
+ AppData/                 IntelGraphicsProfiles/   ntuser.dat.LOG2                                                                               'Saved Games'/
+'Application Data'@       Links/                   NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TM.blf                                        Searches/
+ Contacts/               'Local Settings'@         NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000001.regtrans-ms   SendTo@
+ Cookies@                 MicrosoftEdgeBackups/    NTUSER.DAT{94bccdfa-602e-11e8-9b88-3c0771621aa9}.TMContainer00000000000000000002.regtrans-ms   SkyDrive/
+'Creative Cloud Files'/   MINSTP201806FSF5/        ntuser.ini                                                                                    'Start Menu'@
+ Desktop/                 Music/                   OneDrive/                                                                                      Templates@
+ Documents/              'My Documents'@           Pictures/                                                                                      Tracing/
+ Downloads/               NetHood@                 PrintHood@                                                                                     Videos/
+ Favorites/               NTUSER.DAT               Recent@
+
+sharvari@VAIO MINGW64 ~
+$ rmdir First/
+
+sharvari@VAIO MINGW64 ~
+$ mkdir first_day_stuff
+
+sharvari@VAIO MINGW64 ~
+$ cd first_day_stuff/
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ touch test.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ ls
+test.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ touch first-day.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ ls
+first-day.html  test.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ mkdir one_folder second_folder
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ ls
+first-day.html  one_folder/  second_folder/  test.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ touch one.html two.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ ls
+first-day.html  one.html  one_folder/  second_folder/  test.html  two.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ delete *.html
+bash: delete: command not found
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ del *.html
+bash: del: command not found
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ help
+GNU bash, version 4.4.19(2)-release (x86_64-pc-msys)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                          history [-c] [-d offset] [n] or history -anrw [fil>
+ (( expression ))                                      if COMMANDS; then COMMANDS; [ elif COMMANDS; then >
+ . filename [arguments]                                jobs [-lnprs] [jobspec ...] or jobs -x command [ar>
+ :                                                     kill [-s sigspec | -n signum | -sigspec] pid | job>
+ [ arg... ]                                            let arg [arg ...]
+ [[ expression ]]                                      local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                        logout [n]
+ bg [job_spec ...]                                     mapfile [-d delim] [-n count] [-O origin] [-s coun>
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q name>  popd [-n] [+N | -N]
+ break [n]                                             printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                     pushd [-n] [+N | -N | dir]
+ caller [expr]                                         pwd [-LPW]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS ;;].>  read [-ers] [-a array] [-d delim] [-i text] [-n nc>
+ cd [-L|[-P [-e]] [-@]] [dir]                          readarray [-n count] [-O origin] [-s count] [-t] [>
+ command [-pVv] command [arg ...]                      readonly [-aAf] [name[=value] ...] or readonly -p
+ compgen [-abcdefgjksuv] [-o option] [-A action] [-G>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DE] [-o option] [->  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DE] [name ...]               set [-abefhkmnptuvxBCHP] [-o option-name] [--] [ar>
+ continue [n]                                          shift [n]
+ coproc [NAME] command [redirections]                  shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgilnrtux] [-p] [name[=value] ...]       source filename [arguments]
+ dirs [-clpv] [+N] [-N]                                suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]             test [expr]
+ echo [-neE] [arg ...]                                 time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]          times
+ eval [arg ...]                                        trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [arguments ...]] [red>  true
+ exit [n]                                              type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p          typeset [-aAfFgilnrtux] [-p] name[=value] ...
+ false                                                 ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [pat=r>  umask [-p] [-S] [mode]
+ fg [job_spec]                                         unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done          unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done         until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { COMMANDS >  variables - Names and meanings of some shell varia>
+ getopts optstring name [arg]                          wait [-n] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]             while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                             { COMMANDS ; }
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ rm *.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ ls
+one_folder/  second_folder/
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ touch one.html two.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ ls
+one.html  one_folder/  second_folder/  two.html
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$ start
+
+sharvari@VAIO MINGW64 ~/first_day_stuff
+$

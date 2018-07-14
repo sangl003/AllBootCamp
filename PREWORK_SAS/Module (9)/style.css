@@ -1,0 +1,61 @@
+h1 {
+    
+    text-align: center;
+}
+
+#funText {
+	color: red;
+}
+
+#funTextb {
+    color:blue;
+
+}
+
+#funTextg {
+    color:green;
+
+}
+
+#funTextbig {
+	font-size: 50px;
+}
+
+#funTextsmall {
+	font-size: 10px;
+}
+
+#funTextcenter {
+	text-align: center;
+}
+
+#textBold {
+	font-weight: bold;
+	}
+
+#changefont {
+		font-family: 'Courier New', Courier, monospace;
+	}	
+
+#multiple{
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size: 20px;
+		color: blueviolet;
+		align-content: center;
+	
+
+	}
+
+.styledFont{
+	font-style: oblique;
+	font-weight: bolder;
+	color: chartreuse;
+	background-color: black;
+	
+	}
+
+#styledImage {
+		border-radius: 8px;
+		border-style: dashed;
+	}
+	
