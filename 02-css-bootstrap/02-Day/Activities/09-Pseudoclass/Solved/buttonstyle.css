@@ -32,3 +32,8 @@ a:focus {
 a:active {
   background-color: black;
 }
+
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
