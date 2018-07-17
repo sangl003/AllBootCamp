@@ -1,5 +1,16 @@
 /**
  * Google Fonts Demo
  **/
-
+ .thought1{
+    font-family: 'Chela One', cursive;
+ }
+ 
+ h4 {
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .thought2{
+    font-family: 'Chela One', cursive;
+    font-family: 'Merienda', cursive;
+  }
 /* Add in the Google Fonts of your choice */
