@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+    <p> Users can enter keyboard input (letters).t for tune up , w for world tour, d for drive to ofiice , h for honking</p>
+    <!-- User input is: <input type="text" id="fname" value="str"> -->
+    <script>
+
+    var car = {
+        make: "Honda",
+        model: "Fit",
+        color: "Blue Raspberry",
+        mileage: 3000,
+        isWorking: true,
+
+        driveToWork: function() {
+
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 8;
+
+          alert("New mileage: " + this.mileage);
+        },
+
+        driveAroundWorld: function() {
+
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 24000;
+
+          alert("New Mileage: " + this.mileage);
+          prompt("Car needs a tuneup!");
+
+          this.isWorking = false;
+        },
+
+        getTuneUp: function() {
+          alert("Car is ready to go!");
+          this.isWorking = true;
+        },
+
+        honk: function() {
+          alert("Honk! Honk!");
+        }
+      };
+
+function restats(){
+      console.log("The car is working " + car.isWorking);
+      console.log("The car's make " + car.make);
+      console.log("The car's model " + car.model);
+      console.log("The car's color " + car.color);
+      console.log("The car's mileage using . operator " + car.mileage);
+      console.log("The car's mileage using []" + car["mileage"]);
+      console.log("--------------------------------------------------");
+
+}
+
+document.onkeyup= function(event){
+  var str= event.key.toLowerCase();
+
+      if(str==="h")
+      {
+        car.honk();
+        restats();
+        
+      }
+
+      if(str ==="t"){
+        car.getTuneUp();
+        restats();
+      }
+
+      if(str=== "d")
+      {
+        car.driveToWork();
+        restats();
+      }
+
+      if(str==="w"){
+        car.driveAroundWorld();
+        restats();
+      }
+}
+
+/* function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+    if(x==="h")
+      {
+        car.honk();
+        restats();
+        
+      }
+      if(x=== "d")
+      {
+        car.driveToWork();
+        restats();
+      }
+
+      if(x==="w"){
+        car.driveAroundWorld();
+        restats();
+      }
+
+      if(x ==="t"){
+        car.getTuneUp();
+        restats();
+      } 
+}*/
+
+</script>
+    
+  </body>
+</html>
