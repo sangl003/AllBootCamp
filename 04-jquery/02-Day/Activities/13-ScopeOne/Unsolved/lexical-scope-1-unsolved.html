@@ -9,33 +9,33 @@
   <h2>Check console to see the madness!</h2>
 
   <script>
-    var outerFunction = function() {
+    var outerFunction = function() {   // parent 
 
       var x = 5;
 
-      var nestedFunction = function() {
+      var nestedFunction = function() { // child of outer function 
 
         var y = 7;
 
         // What will this print?
-        console.log("X: " + x);
+        console.log("X: " + x);   // = 5 
 
         // What will this print?
-        console.log("Y: " + y);
+        console.log("Y: " + y);  // = 7
 
         var z = 10;
-        // What will this print?
+        // What will this print?  // z= 10
         console.log("Z (inside): " + z);
       };
 
-      return nestedFunction;
+      return nestedFunction;  // return x, y, z
     };
 
-    var myFunction = outerFunction();
-    myFunction();
+    var myFunction = outerFunction();   // assigning outer functions > that is eventually returning x, y ,z   second function call
+    myFunction(); // this is first line of function call 
 
     // What will this print?
-    console.log("Z (outside): " + z);
+    console.log("Z (outside): " + z);  // this is out of the function nested > where z is a local variable 
 
 </script>
 

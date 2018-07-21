@@ -18,21 +18,21 @@
     }
 
     // What will get alerted?
-    one();
+    one(); //One:  1
 
     // Example Two: Local Scope
     // -------------------------------------------
     function twotop() {
 
-      function two(a) {
+      function two(a) {  // two(1)
         alert("Two: " + a);
       }
 
-      two(a);
+      two(a); 
     }
 
     // What will get alerted?
-    twotop();
+    twotop(); //Two: 1
 
     // Example Three: Local Scope
     // -------------------------------------------
@@ -40,7 +40,7 @@
     function three() {
 
       var a = 3;
-      alert("Three: " + a);
+      alert("Three: " + a); // three: 3
     }
 
     // What will get alerted?
@@ -55,7 +55,7 @@
         var a = 3;
 
         function third() {
-          alert("Four: " + a);
+          alert("Four: " + a);  // Four: 3
         }
 
         third();
@@ -63,7 +63,7 @@
 
       second();
 
-      alert("Five: " + a);
+      alert("Five: " + a);   //five: 5
     }
 
     // What will get alerted?
