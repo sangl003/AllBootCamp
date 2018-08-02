@@ -74,84 +74,9 @@
 
 $(document).ready(function() {
 
-  var firstNum, SecondNum, operatorSign,equal;
-  firstNum = $("#first-number");
-  SecondNum = $("#second-number");
-  result = $("#result");
-  equal = $(".equal");
-
-
-
-        $(".number").on("click", function() {
-           //alert($(this).attr("value"));
-            var num1= $(this).attr("value");
-           //console.log(num1);
-            
-            
-            if (operatorSign != null){
-            
-             SecondNum.append(num1);  
-            }
-            else{
-              var num2= $(this).attr("value");
-              firstNum.append(num2);  
-            }
-   
-        });
-      
-
-       $(".operator").on("click", function() {
-           //alert($(this).attr("value"));
-           operatorSign =" ";
-            var op= $(this).attr("value");
-            if (op === "plus"){
-                $("#operator").append("+");
-              }
-            else if (op === "minus"){
-              $("#operator").append("-");
-            }
-            else if (op === "divide"){
-              $("#operator").append("/");
-            }
-            else if (op === "power"){
-              $("#operator").append("^");
-            }
-
-            else if (op === "times"){
-              $("#operator").append("*");
-            }
-            
-        });
-
-
-
-  $(".equal").on("click", function(){
-    var op= $(this).attr("value")
-             if (op === "+")
-             {
-              a= firstNum.text();
-              console.log("a");
-                  b = SecondNum.text();
-                  c =  a + b;
-                  console.log (c);
-                  result.append(c);
-             }
-            else{
-              result.append("test");
-             console.log( op);
-            }
-            
-
-})
- 
 // Your code here...
 
 
-  $(".clear").on("click",function(){
-          firstNum.empty();
-          operatorSign.empty();
-          SecondNum.empty();
-        });
 });
 
 </script>

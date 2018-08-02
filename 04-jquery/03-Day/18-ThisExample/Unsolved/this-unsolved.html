@@ -14,7 +14,7 @@
     // --------------------------------------------------
     // What is "this" going to print?
 
-    console.log(this);  //the current state of the object will be to window.
+    console.log(this);
 
 
     // EXAMPLE TWO:
@@ -22,7 +22,7 @@
     // What is "this" going to print?
 
     function myFunction() {
-      console.log(this);      //  myFunction will be called and again the current state of the object is window as no values are passed as an argument
+      console.log(this);
     }
     myFunction();
 
@@ -33,10 +33,12 @@
     var someObj = {
       name: "Red Hat",
       say: function() {
+
+        console.log('say',this);
         console.log(this.name);
       }
     };
-    someObj.say(); // current state of the object property is called  this should return Red Hat
+    someObj.say();
 
 
     // EXAMPLE FOUR (BONUS, TRICKY!):
@@ -50,10 +52,10 @@
 
         var changeName = function(newName) {
           this.name = newName;
+          console.log('changeName',this.name)
         };
-        changeName("Blue Shell");
-        console.log(this);    // the whole object will be printed  
-
+        changeName.call(this,"Blue Shell");
+        console.log(this);
       }
     };
     myObj.yell();
@@ -72,13 +74,16 @@
 
         this.name = "Star Powerup";
         var changeName = function(newName) {
-          thisObject.name = newName;   // blue shell
+          thisObject.name = newName;
         };
         changeName("Blue Shell");
-        console.log(thisObject);   // object  will be return 
+        console.log(thisObject);
       }
     };
     myObj.yell();
+
+
+    thing="stuff"
 
   </script>
 </body>
