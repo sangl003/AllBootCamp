@@ -47,5 +47,3 @@ You have an array of filenames with extensions. Sort the files into arrays based
 * mpeg
 * mp4
 * mpg
-
-

@@ -3,7 +3,6 @@
 
 
 // Write a function that sorts an array of numbers in order.
-
 // You can do this with the Bubble Sort algorithm.
 // If you are unfamiliar with Bubble Sort,
 // use Google to read up on the concept.
@@ -17,6 +16,7 @@
 // the sorted result should be displayed in the `#result` div.
 
 // DO NOT USE JQUERY TO SELECT ELEMENTS. ONLY USE VANILLA JS.
+
 
 var unsortedArr = [
   1, 326, 251, 24, 284, 364, 287, 74, 89,
@@ -67,30 +67,3 @@ var unsortedArr = [
   292, 332, 209, 244, 196, 179, 472, 279, 40, 486, 270, 185,
   181, 485, 495, 81, 169, 294, 79, 400, 92, 104, 249
 ];
-
-function bubbleSort(arr){
-const result = [ ...arr ];  // copy of array
- let sorted = false;
- while(!sorted){
-   sorted = true;
-
-   for (i =0 ; i < arr.length; i++){
-     if(arr[i] > arr[i+1]){
-       sorted = false;
-       const temp = result[i];  
-       result[i] = result [i+1];   
-       result[i+1]= temp;
-     }
-   }
- }
-
-return result;
-}
-
-document.querySelector("#start").innerHTML = unsortedArr.join(", ");
-const gobtn = document.querySelector("#go");
-gobtn.addEventListener("click", () => {
-  const sorteArr = bubbleSort(unsortedArr);
-  document.querySelector("#start").innerHTML = unsortedArr.join(", ");
-
-})
