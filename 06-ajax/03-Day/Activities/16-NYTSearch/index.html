@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap 101 Template</title>
+ <!-- Bootswatch Styling for Improving the Aesthetics -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+ <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>   
+        <div class="container">  
+        <div class="jumbotron jumbotron-fluid" style = "background-color: #20315A ; color: white;">
+          <h1 > <strong>
+          <i class="fa fa-newspaper-o"></i> New York Times Search </strong></h1>
+        
+        </div>
+      <div class="row">
+          <div class="col-md-12">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title" style = "background-color: #20315A ; color: white;"> <i class="fa fa-newspaper-o"></i>  Search</h3>
+                                <form role = "form">
+                                        <div class = "form-group">
+                                            <label for="Search">Search Term : </label>
+                                            <input type="text" class="form-control" id="search-term">
+                                         </div>
+                                        <div class = "form-group">
+                                            <label for="number-of-records">Number of Records to retrieve : </label>
+                                            <input type="text" class="form-control" id="number-of-records" value="5">
+                                        </div>
+                                        <div class = "form-group">
+                                            <label for="Start-of-year">Start of year (Optional): </label>
+                                            <input type="text" class="form-control" id="Start-of-year">
+                                        </div>
+                                        <div class = "form-group">
+                                            <label for="End-of-year">End of year (optional) : </label>
+                                            <input type="text" class="form-control" id="search-term">
+                                        </div>
+                                        <div class = "form-group">
+                                                <button type="submit" class = "btn btn-default" id ="searchBtn"><i class="fa fa-search"></i>Search</button>
+                                                <button type="reset" class = "btn btn-default" id ="clearBtn"><i class="fa fa-trash"></i>Clear Results</button>
+                                         </div>                                    
+                                </form>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+                     
+            </div>
+      
+        <div class="row">
+                <div class="col-md-12">
+                      <div class="card-group">
+                              <div class="card">
+                          
+                                <div class="card-body">
+                                  <h3 class="card-title" style = "background-color: #20315A ; color: white;"> <i class="fa fa-table"></i>  Top Articles</h3>
+                                      <form role = "form">
+                                              <div class = "form-group" id ="result">
+                                                 
+                                               </div>
+                                                                              
+                                      </form>
+                                  </div>
+                                  </div>                            
+                                </div>
+                              </div>
+                           
+                      </div>
+                  </div>
+           </div>
+     </div>
+    </div>
+     
+  <!-- jQuery CDN -->
+
+  <!-- Bootstrap JavaScript CDN -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js">
+  
+  </script>
+  
+</body>
+
+</html>
