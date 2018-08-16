@@ -19,7 +19,7 @@
           <th scope="col">Actors</th>
         </tr>
       </thead>
-      <tbody id= table>
+      <tbody>
         <!-- Insert movie rows here -->
       </tbody>
     </table>
@@ -36,22 +36,9 @@
     }).then(function(response) {
 
       // Obtain a reference to the tbody element in the DOM
-        console.log(response);
-      // var tBody =  document.getElementById("#tbody");
       // Create and save a reference to new empty table row
-
-      var tBody = $("#table");
       // Create and save references to 3 td elements containing the Title, Year, and Actors from the AJAX response object
-      var newRow = $("<tr>");
-      var td1 = $(`<td>${response.Title}</td>`);
-      var td2 = $(`<td>${response.Year}</td>`);
-      var td3 = $(`<td>${response.Actors}</td>`);
-     
-      newRow.append(td1);
-      newRow.append(td2);
-      newRow.append(td3);
       // Append the td elements to the new table row
-      tBody.append(newRow);
       // Append the table row to the tbody element
     });
 

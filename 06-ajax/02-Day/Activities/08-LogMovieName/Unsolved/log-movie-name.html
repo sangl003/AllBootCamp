@@ -37,10 +37,9 @@
 
       // Generic function for capturing the movie name from the data-attribute
       function alertMovieName() {
-        var b = $(".movie");
-          // Adding a class
-        alert(b.attr("data-name"));
-        
+
+        // YOUR CODE GOES HERE!!!
+
       }
 
       // Function for displaying movie data
@@ -59,7 +58,6 @@
           // Adding a class
           a.addClass("movie");
           // Added a data-attribute
-          a.attr("id",movies[i]);
           a.attr("data-name", movies[i]);
           // Provided the initial button text
           a.text(movies[i]);
@@ -88,8 +86,7 @@
       // work for dynamically generated elements
       // $(".movies").on("click") will only add listeners to elements that are on the page at that time
       $(document).on("click", ".movie", alertMovieName);
-     
-    
+
       // Calling the renderButtons function to display the intial buttons
       renderButtons();
     </script>
