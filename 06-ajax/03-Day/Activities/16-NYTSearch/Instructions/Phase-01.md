@@ -18,9 +18,3 @@
 * Understand what format the URL should look like to make an Article Call. (Hint: Use the API Console!!)
 
 * Experiment with console logging various fields.
-
-
-var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-url += '?' + $.param({
-  'api-key': "7fc8dde8cc494ce2b5befb8da8215c04"
-});

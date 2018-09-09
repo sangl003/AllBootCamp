@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Click Button with Firebase!</title>
+
+  <!-- -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+<body>
+
+  <!-- -->
+  <h1>Ouch! You've clicked me
+    <span id="click-value"></span> times!</h1>
+
+  <!-- -->
+  <button id="click-button">Click Me!!!!</button>
+
+  <!-- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- ================================================================================== -->
+  <script>
+        // setting up the config properties 
+    var config = {
+      apiKey: "AIzaSyAJS4YQWU5DmESeYueG1qH1NGkjv3DncEY", // key to the project 
+      authDomain: "fir-click-counter-7cdb9.firebaseapp.com",   // link to the fire base app
+      databaseURL: "https://fir-click-counter-7cdb9.firebaseio.com",  // link to the database
+      storageBucket: "fir-click-counter-7cdb9.appspot.com" //  fire base storage for object data
+    };
+
+    firebase.initializeApp(config);  // initialize app passing config object 
+
+    // VARIABLES
+    // --------------------------------------------------------------------------------
+
+    var database = firebase.database(); // firebase object > reference to the database 
+    var clickCounter = 0;  // initialize the clik counter 
+
+    // FUNCTIONS + EVENTS
+    // --------------------------------------------------------------------------------
+
+    $("#click-button").on("click", function() {    // setting up click event 
+      clickCounter++;                           // increment the click counter 
+      database.ref().set({            // accessing the root through ref and setting the property click count to current clickCounter value 
+        clickCount: clickCounter
+      });
+    });
+
+    // MAIN PROCESS + INITIAL CODE
+    // --------------------------------------------------------------------------------
+
+    database.ref().on("value",                // value event handler needs 3 arg(event name , function , error handler )
+    
+      function(snapshot) {    // on value event handler  accessing the current state of database
+      console.log(snapshot.val());
+      $("#click-value").text(snapshot.val().clickCount);  // accessing  the property click count 
+      clickCounter = snapshot.val().clickCount;     // setting the local object to  the current state of the database counter value
+    },
+    
+    function(errorObject) {                          // error handler 
+      console.log("The read failed: " + errorObject.code);
+    });
+
+  </script>
+
+</body>
+
+</html>
