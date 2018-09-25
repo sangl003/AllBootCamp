@@ -1,0 +1,40 @@
+/** overlay **/
+.overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:0 5rem;
+  z-index:9000;
+  background:rgba(0,0,0,.75);
+  display:flex;
+  justify-content: center;
+  max-height:100%;
+  display:none;
+}
+.overlay .overlay-contents {
+  padding:1rem;
+  max-height:100%;
+  display:flex;
+  flex-direction:column;
+}
+.overlay p {
+  margin:0 0 1rem 0;
+}
+.overlay header{
+  padding:1rem;
+  display:flex;
+}
+.overlay header h2{
+  flex-grow:1;
+}
+.overlay section {
+  background:#fff;
+  overflow:auto;
+  flex-shrink :1;
+  order:30;
+}
+.overlay:target {
+  display:block;
+}
