@@ -28,33 +28,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-// Add code to query the bands in town api searching for the artist received as an argument to this function
-
-
   function searchBandsInTown(artist) {
-
-    var urlQuery = "https://rest.bandsintown.com/artists/"+ artist+ "?app_id=dsaf";
-    var eventURL = "https://rest.bandsintown.com/artists/"+ artist +"/events?app_id=dsaf";
-
-$.ajax({
-  url: urlQuery,
-  method: "GET",
-}).then(function(res){
-  $("#artist-div").append(`<h1>${res.name}</h1>`);
-  $("#artist-div").append(`<img src=${res.image_url}>`);
-  $("#artist-div").append(`<h2>${res.tracker_count} fans tracking this artist</h2>`);
-  $("#artist-div").append(`<h2>Upcoming events: ${res.upcoming_event_count}</h2>`);
-  console.log(res)
-
-  $.ajax({
-    url:eventURL,
-    method: "GET",
-  }).then(function(e){
-    $('#artist-div').append(`<a href=${e[0].offers.url}>Get Tickets!</a>`)
-    console.log(e)
-  })
-
-})
     // Add code to query the bands in town api searching for the artist received as an argument to this function
     // Using jQuery, append the following to the #artist-div :
     // The artist's name

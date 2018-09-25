@@ -24,10 +24,12 @@
             * with a quote said by them -->
 
     <!-- **************************************** -->
-    <button data-person="Michael Jackson">
-      Celebrity
-    </button>
-   
+
+    <!-- YOUR BUTTONS GO HERE!!!!!! Obviously delete this text after you put them between the dashed lines here.  -->
+
+    <!-- **************************************** -->
+
+
     <!-- STEP THREE: open this file in the browser and click on your buttons. If they don't work, then fix your buttons -->
 
     <!-- STEP FOUR: go over the JavaScript with your partners, and explain the lines of code to each other. -->
@@ -40,18 +42,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
     $("button").on("click", function() {
-      var person = $(this).attr("data-person");  // current objects/ current button clicked  attribute is assigned to perrson which is passed to build the query
+      var person = $(this).attr("data-person");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        person + "&api_key=dc6zaTOxFJmzC&limit=10";                                    // api UR + persons name  + api key 
+        person + "&api_key=dc6zaTOxFJmzC&limit=10";
 
-      $.ajax({  // ajax call
+      $.ajax({
         url: queryURL,
         method: "GET"
       })
-        .then(function(response) {                // once the object is return from ajax call get the information in results
+        .then(function(response) {
           var results = response.data;
 
-          for (var i = 0; i < results.length; i++) {     // for all returned number of array element go through and start adding a div for each 
+          for (var i = 0; i < results.length; i++) {
             var gifDiv = $("<div class='item'>");
 
             var rating = results[i].rating;
@@ -59,12 +61,12 @@
             var p = $("<p>").text("Rating: " + rating);
 
             var personImage = $("<img>");
-            personImage.attr("src", results[i].images.fixed_height.url);   // create an object for image 
+            personImage.attr("src", results[i].images.fixed_height.url);
 
-            gifDiv.prepend(p);      // show the rating 
-            gifDiv.prepend(personImage);  // show the image 
+            gifDiv.prepend(p);
+            gifDiv.prepend(personImage);
 
-            $("#gifs-appear-here").prepend(gifDiv);  // div holder for the rating and image 
+            $("#gifs-appear-here").prepend(gifDiv);
           }
         });
     });

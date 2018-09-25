@@ -23,8 +23,6 @@
       <input id="find-movie" type="submit" value="Movie Search">
     </form>
 
-    <div id = "movie-result"> </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
       // This .on("click") function will trigger the AJAX Call
@@ -41,24 +39,7 @@
         var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
         // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
-
-        $.ajax({
-              url: queryURL,
-              method: "GET"
-            }).then(function(response) {
-
-            console.log(JSON.stringify(response));
-            console.log(response);  
         // and display it in the div with an id of movie-view
-        
-        $("#movie-result").html(`<h3>Title : ${response.Title}</h3>`);
-        $("#movie-result").append(`<img src = ${response.Poster} > </img>`);
-        $("#movie-result").append(`<h3> Actors:  ${response.Actors}</h3>`);
-        $("#movie-result").append(`<h3> Year: ${response.Year} Rated: ${response.Rated}</h3>`);
-        $('#movie-result').append(`<h1>${JSON.stringify(response)} </h1>`);
-        //$("#movie-view").append(`<h3> ${response.Poster} </h3>`);
-       
-
 
         // YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE
 
@@ -67,12 +48,6 @@
         // CODE GOES HERE
 
         // =================================================================
-            });
-
-
-        $.get(queryURL).then
-
-        
       });
     </script>
   </div>
